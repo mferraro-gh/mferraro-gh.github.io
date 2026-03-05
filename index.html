@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>Marco's Portfolio</title>
+  <title>Marco Ferraro | Solution Engineer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Marco Ferraro - Senior Scale Solution Engineer at Databricks. Full-stack development, AI/ML, and cloud architecture.">
 
-  <!-- linking css file -->
   <link rel="stylesheet" href="style.css">
 
   <!-- bootstrap CDN -->
@@ -14,107 +14,223 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- font awesome -->
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@100;300;400&family=Montserrat:wght@600&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@100;300;400&family=Montserrat:wght@600;700&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Marco Ferraro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <section class="content">
+    <!-- Hero -->
     <section class="hero" id="home">
-      <div class="hero-image">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <h1 class="hero-title">Nice to meet you!</h1>
-            <p class="lead hero-description">My name is Marco, and I am a recent graduate with a strong passion for
-              Computer Science.</p>
-            <div class="hero-cta">
-              <a href="#portfolio" class="btn btn-hero">View My Work</a>
-              <a href="#contact" class="btn btn-hero-outline">Get In Touch</a>
-            </div>
+      <div class="hero-bg">
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="hero-shape hero-shape-3"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-text">
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-title">Marco Ferraro</h1>
+          <p class="hero-role">Senior Scale Solution Engineer <span class="hero-at">at</span> <span class="hero-company">Databricks</span></p>
+          <p class="hero-description">Building full-stack applications, optimizing AI/ML workloads, and architecting cloud-native solutions.</p>
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn btn-hero">View My Work</a>
+            <a href="#contact" class="btn btn-hero-outline">Get In Touch</a>
           </div>
+          <div class="hero-social">
+            <a href="https://github.com/mferraro-gh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/marco-ferraro-1182a1200/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:mantofer2000@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-ring"></div>
+          <img src="images/hello.jpeg" alt="Marco Ferraro" class="hero-portrait">
         </div>
       </div>
     </section>
 
+    <!-- About -->
     <section class="about" id="about">
       <div class="container mt-4 pt-4">
         <h1 class="about-title text-center">About Me</h1>
         <div class="row mt-4">
           <div class="col-md-4">
-            <img src="images/about.jpeg" class="imageAboutPage" alt="">
+            <img src="images/about.jpeg" class="imageAboutPage" alt="Marco Ferraro">
           </div>
 
           <div class="col-lg-8">
-            <h2 class="smaller">Personal Information</h2>
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <ul>
-                  <li>Name: Marco Antonio Ferraro Rodriguez</li>
-                  <li>Age: <span id="age" data-birth="2000-07-14" /></li>
-                  <li>Occupation: Software Engineer</li>
+            <h2 class="smaller">Who I Am</h2>
+            <p>I'm a Senior Scale Solution Engineer at Databricks, based in Costa Rica. I specialize in architecting full-stack applications with React, Next.js, and TypeScript, deploying AI Agents, and optimizing production AI/ML workloads across AWS, Azure, and GCP.</p>
 
-                </ul>
-              </div>
-            </div>
+            <h2 class="smaller">What I Do</h2>
+            <p>I build internal tools that automate business processes, drive open-source security projects like SAT, and mentor new engineers. I partner with executive stakeholders to align data architectures with business goals using event-driven patterns and scalable microservices.</p>
 
-            <h2 class="smaller">Background and Skills</h2>
-            <p> As a recent computer science graduate, I possess a robust skill set in software development,
-              data structures, and algorithms. My experience spans across web development, machine
-              learning,
-              and data analysis, showcasing my versatility in various domains. Proficiency in Java,
-              Python,
-              C++, and Ruby empowers me to tackle diverse projects effectively.
-            </p>
-
-            <h2 class="smaller">Approach and Ambitions</h2>
-            <p>
-              My problem-solving abilities and enthusiasm for continuous learning drive me to seek new
-              challenges and opportunities for personal and professional growth. I am eager to apply my
-              knowledge and expertise to contribute meaningfully to the tech industry.
-            </p>
-
-            <h2 class="smaller">Interests and Passions</h2>
-
-            <p> Beyond coding and tech, I'm a big fan of reading, and "Dune" is hands down my favorite
-              book!
-              There's something captivating about getting lost in a well-crafted story.
-              Sports are another passion of mine. Tennis, padel, and boxing get my adrenaline pumping
-              and
-              feed my competitive spirit.
-              But above all, family means the world to me. Their love and support have been
-              instrumental
-              in shaping the person I am today.
-              I'm eager to tackle new challenges and grow both personally
-              and professionally in the dynamic world of computer science. Let's connect and explore
-              how
-              we can create meaningful projects together!
-            </p>
+            <h2 class="smaller">Beyond Work</h2>
+            <p>Outside of engineering, I'm an avid reader (Dune is my all-time favorite), and I stay active with tennis, padel, and boxing. Family is at the center of everything I do.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Experience -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h1 class="text-center">Experience</h1>
+        <div class="timeline">
 
-    <!-- portfolio section-->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Senior Scale Solution Engineer</h3>
+                <span class="timeline-company">Databricks</span>
+                <span class="timeline-date">Sept 2025 &ndash; Present</span>
+              </div>
+              <ul>
+                <li>Architect and deploy internal full-stack apps with React, Next.js, and TypeScript, utilizing AI Agents for business process automation.</li>
+                <li>Primary Onboarding Buddy and mentor for new engineers, establishing code quality standards.</li>
+                <li>Drive core feature development for the Security Analysis Tool (SAT) in Python and PostgreSQL for multi-cloud security.</li>
+                <li>Partner with executive stakeholders on account planning, aligning data architectures with business goals.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Scale Solution Engineer</h3>
+                <span class="timeline-company">Databricks</span>
+                <span class="timeline-date">Nov 2023 &ndash; Sept 2025</span>
+              </div>
+              <ul>
+                <li>Optimized production AI/ML workloads using Spark, MLflow, and dbt for end-to-end model management.</li>
+                <li>Implemented IaC using Terraform to automate Databricks deployments across AWS and Azure.</li>
+                <li>Spearheaded the Costa Rica Learning & Development team as lead speaker for the Academia Program.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Associate Automation Engineer</h3>
+                <span class="timeline-company">Hakkoda</span>
+                <span class="timeline-date">Feb 2023 &ndash; Oct 2023</span>
+              </div>
+              <ul>
+                <li>Designed serverless Node.js and Python Lambda functions on AWS, integrating RESTful APIs with Snowflake backends.</li>
+                <li>Engineered automated user provisioning and SSO/OAuth solutions with JWT authentication.</li>
+                <li>Established CI/CD pipelines using GitHub Actions with automated testing and security scanning.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Engineering Intern</h3>
+                <span class="timeline-company">Establishment Labs</span>
+                <span class="timeline-date">Jun 2023 &ndash; Aug 2023</span>
+              </div>
+              <ul>
+                <li>Developed three web applications using Vue.js with responsive UI/UX design.</li>
+                <li>Managed backend deployment using AWS CloudFormation and API Gateway in an Agile framework.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h1 class="text-center">Skills & Certifications</h1>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3>Languages</h3>
+            <p>TypeScript, Python, Java, Go, SQL, C++, R</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Frameworks</h3>
+            <p>React, Next.js, Tailwind CSS, Node.js, Vue, GraphQL, REST APIs</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+            <h3>AI & ML</h3>
+            <p>LLM Orchestration, AI Agents, MLflow, PyTorch, Pandas</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+            <h3>Cloud & DevOps</h3>
+            <p>AWS, Azure, GCP, Databricks, Terraform, Docker, GitHub Actions</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-certificate"></i></div>
+            <h3>Certifications</h3>
+            <p>Databricks Gen. AI Engineer, ML Professional, Terraform Associate</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Education</h3>
+            <p>B.Sc. Computer Science (UCR) &middot; Postgrad Data Science (TEC)</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
     <section id="portfolio">
       <div class="container mt-3">
-        <h1 class="text-center">Portfolio</h1>
-        <p class="lead-text">Explore my recent projects in data science, machine learning, and software development.</p>
+        <h1 class="text-center">Projects</h1>
+        <p class="lead-text">Explore my work in data science, machine learning, and software development.</p>
         <div class="row">
           <div class="col-lg-4 mt-4">
             <div class="card portfolioContent">
               <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Bot detection in Twitter">
               <div class="card-body">
-                <h4 class="card-title">Bot detection in Twitter</h4>
-                <p class="card-text">Scientific investigation done to evaluate the performance of a Bot detection model
-                  for Twitter.</p>
+                <h4 class="card-title">Bot Detection in Twitter</h4>
+                <p class="card-text">Scientific investigation evaluating the performance of a bot detection model for Twitter using ML classification techniques.</p>
                 <div class="text-center">
-                  <a href="https://analysis-of-bots-prescence.hostful.io/" class="btn btn-cta">Link to Paper</a>
+                  <a href="https://analysis-of-bots-prescence.hostful.io/" class="btn btn-cta">View Paper</a>
                 </div>
               </div>
             </div>
@@ -125,11 +241,9 @@
               <img class="card-img-top" src="images/portfolioImage2.jpg" alt="Data Science Bootcamp">
               <div class="card-body">
                 <h4 class="card-title">Data Science Bootcamp</h4>
-                <p class="card-text">Work done at Intituto Tecnologico de Costa Rica. AI, ML, and Data Science practical
-                  exercises and projects.</p>
+                <p class="card-text">AI, ML, and Data Science practical exercises and projects completed at Instituto Tecnologico de Costa Rica.</p>
                 <div class="text-center">
-                  <a href="https://github.com/mferraro-gh/DataScienceBootcamp" class="btn btn-cta">Link to
-                    Repository</a>
+                  <a href="https://github.com/mferraro-gh/DataScienceBootcamp" class="btn btn-cta">View Repository</a>
                 </div>
               </div>
             </div>
@@ -140,26 +254,24 @@
               <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Machine Learning Repository">
               <div class="card-body">
                 <h4 class="card-title">Machine Learning Repository</h4>
-                <p class="card-text">ML models and projects done at UCR. Work includes Deep Reinforment learning applied
-                  to games.</p>
+                <p class="card-text">ML models and projects from UCR, including Deep Reinforcement Learning applied to games.</p>
                 <div class="text-center">
-                  <a href="https://github.com/mferraro-gh/CI-0148-2022-S2" class="btn btn-cta">Link to Repository</a>
+                  <a href="https://github.com/mferraro-gh/CI-0148-2022-S2" class="btn btn-cta">View Repository</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <br>
+      </div>
     </section>
 
-
+    <!-- Contact -->
     <section id="contact" class="contact">
       <div class="container">
         <h1 class="text-center">Let's Connect</h1>
-        <p class="lead-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of
-          your vision.</p>
+        <p class="lead-text">I'm always open to discussing new projects, creative ideas, or opportunities.</p>
         <div class="row justify-content-center">
-          <div class="contact-card col-lg-3 col-md-6 col-sm-6 col-10 mt-4"> <!-- Added col-md-6 class -->
+          <div class="contact-card col-lg-3 col-md-6 col-sm-6 col-10 mt-4">
             <a href="mailto:mantofer2000@gmail.com?subject=Hello!&body=I%20hope%20this%20email%20finds%20you%20well.">
               <div class="contact-icon">
                 <i class="fas fa-envelope"></i>
@@ -168,7 +280,7 @@
             <p class="text-center">mantofer2000@gmail.com</p>
           </div>
 
-          <div class="contact-card col-lg-3 col-md-6 col-sm-6 col-10 mt-4"> <!-- Added col-md-6 class -->
+          <div class="contact-card col-lg-3 col-md-6 col-sm-6 col-10 mt-4">
             <a href="https://github.com/mferraro-gh" target="_blank">
               <div class="contact-icon">
                 <i class="fab fa-github"></i>
@@ -177,7 +289,7 @@
             <p class="text-center">github.com/mferraro-gh</p>
           </div>
 
-          <div class="contact-card col-lg-3 col-md-6 col-sm-6 col-10 mt-4"> <!-- Added col-md-6 class -->
+          <div class="contact-card col-lg-3 col-md-6 col-sm-6 col-10 mt-4">
             <a href="https://www.linkedin.com/in/marco-ferraro-1182a1200/" target="_blank">
               <div class="contact-icon">
                 <i class="fab fa-linkedin"></i>
@@ -189,7 +301,7 @@
       </div>
     </section>
 
-
+    <!-- Footer -->
     <section class="footer">
       <div class="footer-content">
         <div class="footer-social">
@@ -202,15 +314,13 @@
           <a href="https://www.linkedin.com/in/marco-ferraro-1182a1200/" target="_blank" class="footer-link">
             <i class="fab fa-linkedin"></i>
           </a>
-
         </div>
-        <p>&copy; 2025 Marco Ferraro. All rights reserved.</p>
+        <p>&copy; 2026 Marco Ferraro. All rights reserved.</p>
       </div>
     </section>
 
   </section>
-  <script src="script/script.js" />
-
+  <script src="script/script.js"></script>
 </body>
 
 </html>
